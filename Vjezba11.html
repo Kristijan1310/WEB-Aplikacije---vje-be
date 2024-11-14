@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma za unos podataka</title>
+    <style>
+        /* Osnovni stilovi za formu */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .gender {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .gender label {
+            font-weight: normal;
+            margin-left: 5px;
+        }
+
+        .gender-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin-top: 10px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" required placeholder="Unesite ime">
+        <label for="prezime">Prezime:</label>
+        <input type="text" id="prezime" name="prezime" required placeholder="Unesite prezime">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required placeholder="Unesite e-mail">
+        <div class="gender">
+            <div class="gender-option">
+                <input type="radio" id="musko" name="spol" value="musko" required>
+                <label for="musko">Muško</label>
+            </div>
+            <div class="gender-option">
+                <input type="radio" id="zensko" name="spol" value="zensko">
+                <label for="zensko">Žensko</label>
+            </div>
+        </div>
+        <button type="submit">Pošalji</button>
+        <button type="reset">Poništi</button>
+    </form>
+
+</body>
+</html>
