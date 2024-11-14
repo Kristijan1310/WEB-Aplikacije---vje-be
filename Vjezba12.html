@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        /* Centriranje stranice */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Visina stranice */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Stil za formu */
+        form {
+            width: 400px; /* Proširena širina forme */
+            padding: 30px; /* Prošireni padding oko forme */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+
+        /* Stil za inpute i textarea */
+        input, select, textarea {
+            width: 100%;
+            padding: 12px; /* Prošireni padding unutar inputa */
+            margin-top: 10px; /* Povećan razmak između labela i inputa */
+            margin-bottom: 15px; /* Povećan razmak između inputa */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        /* Placeholder stil */
+        input::placeholder, textarea::placeholder {
+            color: #aaa; /* Siva boja placeholdera */
+            font-style: italic; /* Italic font za placeholder */
+        }
+
+        /* Stil za dugmadi */
+        button {
+            width: 48%;
+            padding: 12px; /* Prošireni padding za dugmadi */
+            margin-top: 15px; /* Povećan razmak između inputa i dugmadi */
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button[type="reset"] {
+            background-color: #f44336;
+        }
+
+        /* Razmak između dugmadi */
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <div>
+            <label for="first-name">First Name:</label><br>
+            <input type="text" id="first-name" name="first-name" placeholder="Your first name..." required><br>
+        </div>
+
+        <div>
+            <label for="last-name">Last Name:</label><br>
+            <input type="text" id="last-name" name="last-name" placeholder="Your last name..." required><br>
+        </div>
+
+        <div>
+            <label for="email">Your E-mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="Your E-mail..." required><br>
+        </div>
+
+        <div>
+            <label for="country">Country:</label><br>
+            <select id="country" name="country" required>
+                <option value="usa">Croatia</option>
+                <option value="canada">Spain</option>
+                <option value="germany">Germany</option>
+                <option value="france">France</option>
+            </select><br>
+        </div>
+
+        <div>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" placeholder="Write something..." required></textarea><br>
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
