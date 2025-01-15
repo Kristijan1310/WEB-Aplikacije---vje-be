@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML s Ugrađenim CSS-om</title>
+    <style>
+        /* Stil za naslov */
+        h1 {
+            text-transform: uppercase; /* Sva slova velika */
+            transition: box-shadow 0.3s ease; /* Glatka tranzicija sjene */
+        }
+
+        h1:hover {
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Sjena kad pređete mišem */
+        }
+
+        /* Stil za prvi odlomak */
+        p:first-of-type {
+            letter-spacing: 2px; /* Razmak između slova 2px */
+            word-spacing: 7px; /* Razmak između riječi 7px */
+        }
+
+        /* Stil za drugi odlomak */
+        p + p {
+            line-height: 1.6; /* Razmak između linija */
+            margin-top: 20px; /* Razmak između odlomaka 20px */
+        }
+
+        /* Stil za sve odlomke */
+        p {
+            text-indent: 50px; /* Uvlaka 50px */
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p>Ovo je prvi odlomak s razmakom između slova i riječi prema zadanim postavkama. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Ovo je drugi odlomak koji ima razmak između linija i uvlačenje prvog reda. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARQ Collection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: url('naslovnica.webp') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #000;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .title {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-content {
+            padding: 15px;
+        }
+
+        .product-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .product-content p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .product-content .price {
+            font-weight: bold;
+            color: #000;
+        }
+
+        footer {
+            text-align: center;
+            background: #000;
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MARQ ® TOOL WATCH COLLECTION</h1>
+    </header>
+
+    <nav>
+        <a href="#">Homepage</a>
+        <a href="#">Articles</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2 class="title">Luxury Smartwatches</h2>
+        <div class="products">
+            <div class="product">
+                <img src="sat1.webp" alt="MARQ Adventurer">
+                <div class="product-content">
+                    <h3>MARQ Adventurer</h3>
+                    <p>Adventure awaits with its exquisite design and robust build.</p>
+                    <p class="price">$1500</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="sat2.webp" alt="MARQ Athlete">
+                <div class="product-content">
+                    <h3>MARQ Athlete</h3>
+                    <p>Track your performance and push your limits.</p>
+                    <p class="price">$1300</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="sat3.webp" alt="MARQ Aviator">
+                <div class="product-content">
+                    <h3>MARQ Aviator</h3>
+                    <p>Precision and elegance for the skies.</p>
+                    <p class="price">$2000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; Kristijan Antunović 2025
+    </footer>
+</body>
+</html>
